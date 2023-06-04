@@ -1,0 +1,2 @@
+RGBLIGHT_ENABLE = no
+OLED_ENABLE = no
