@@ -65,23 +65,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    KC_TAB, KC_Q   , KC_W   , KC_E   , KC_R   , KC_T   , KC_VOLU,          KC_LEFT, KC_Y    , KC_U   , KC_I   , KC_O   , KC_P   , KC_LBRC,
   KC_CAPS, KC_A   , KC_S   , KC_D   , KC_F   , KC_G   , KC_MUTE,       TG(_RAISE), KC_H    , KC_J   , KC_K   , KC_L   , KC_SCLN, KC_QUOT,
   KC_LSFT, KC_Z   , KC_X   , KC_C   , KC_V   , KC_B   , KC_VOLD,          KC_RGHT, KC_N    , KC_M   , KC_COMM, KC_DOT , KC_SLSH, KC_RSFT,
-                 MO(_LOWER), KC_LCTL,KC_BSPC , KC_LALT, KC_BSLS,       MO(_RAISE), KC_SPC  , KC_EQL , KC_RCTL, KC_ENT
+                KC_BSLS, KC_LCTL, KC_BSPC , KC_LALT, MO(_LOWER),       MO(_RAISE), KC_SPC  , KC_ENT , KC_RCTL, KC_EQL
 ),
 
 [_LOWER] = LAYOUT_via(
   _______, _______, _______, _______, _______, _______,                         _______, _______, _______, _______, _______, _______,
    KC_GRV, XXXXXXX, XXXXXXX, XXXXXXX,S(KC_F6), XXXXXXX, KC_PGUP,       KC_SALE, XXXXXXX, KC_HOME,   KC_UP,  KC_END, KC_PSCR, KC_RBRC ,
-  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,       XXXXXXX, XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, KC_RPRN, S(KC_RBRC),
+  _______, XXXXXXX, C(KC_S), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,       XXXXXXX, XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, KC_RPRN, S(KC_RBRC),
   _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), XXXXXXX, KC_PGDN,       KC_SARG, KC_BSPC,  KC_DEL, XXXXXXX, XXXXXXX, XXXXXXX, _______,
-                    XXXXXXX, _______, KC_LGUI, _______, _______,       XXXXXXX, _______, _______, _______, _______
+                    _______, _______, KC_LGUI, _______, _______,       XXXXXXX, _______, _______, _______, _______
 ),
 
 [_RAISE] = LAYOUT_via(
   _______, KC_F1  , KC_F2  , KC_F3  , KC_F4  , KC_F5  ,                         KC_F6 , KC_F7  , KC_F8  , KC_F9  , KC_F10 , KC_F11 ,
   _______, KC_ACL0, KC_ACL1, KC_ACL2, XXXXXXX, XXXXXXX, KC_PGUP,     _______,  XXXXXXX, KC_WBAK, KC_MS_U, XXXXXXX, KC_WH_U, KC_F12 ,
-  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,     _______,  XXXXXXX, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, XXXXXXX,
+  _______, XXXXXXX, C(KC_S), XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,     _______,  XXXXXXX, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, XXXXXXX,
   _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), XXXXXXX, KC_PGDN,     _______,  KC_BSPC,  KC_DEL, KC_MPLY, XXXXXXX, XXXXXXX, _______,
-                    XXXXXXX, _______, KC_BTN1, KC_BTN3, KC_BTN2,     _______, _______ , _______, _______, _______
+                    _______, _______, KC_BTN1, KC_BTN3, KC_BTN2,     _______, _______ , _______, _______, _______
 )
 };
 
